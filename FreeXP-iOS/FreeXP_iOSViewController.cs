@@ -26,7 +26,11 @@ namespace FreeXP.iOS
 		{
 			base.ViewDidLoad();
 
-			_freer = new XPFreer(new XPProvider(new[] { switch1, switch2, switch3, switch4 }));
+			_freer = new XPFreer(
+				new XPProvider<UISwitch>(
+					new[] { switch1, switch2, switch3, switch4 },
+					x => x.SetState(true, true),
+					x => x.SetState(false, true)));
 		}
 
 		partial void free(MonoTouch.UIKit.UIButton sender)

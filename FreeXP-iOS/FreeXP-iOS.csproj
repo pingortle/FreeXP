@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{FD66F48D-1FA4-4C0C-BAC9-A34D93CED1AD}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
@@ -106,7 +104,6 @@
     <Compile Include="FreeXP_iOSViewController.designer.cs">
       <DependentUpon>FreeXP_iOSViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="XPProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="FreeXP_iOSViewController.xib" />

@@ -23,7 +23,15 @@ namespace FreeXP.Android
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
 
-			_freer = new XPFreer(new XPProvider(FindViewById<LinearLayout>(Resource.Id.linearLayout1).GetAllChildren().Cast<ToggleButton>()));
+			_freer = new XPFreer(
+				new XPProvider<ToggleButton>(
+					FindViewById<LinearLayout>(Resource.Id.linearLayout1)
+						.GetAllChildren()
+						.Cast<ToggleButton>()
+						.ToList(),
+					x => x.Checked = true,
+					x => x.Checked = false
+				));
 
 			FindViewById<Button>(Resource.Id.free).Click += delegate {
 				_freer.FreeSomething();

@@ -69,7 +69,7 @@ Global
 		{FD66F48D-1FA4-4C0C-BAC9-A34D93CED1AD}.Release|x86.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FreeXP-Android\FreeXP-Android.csproj
+		StartupItem = FreeXP-iOS\FreeXP-iOS.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None
