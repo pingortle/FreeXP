@@ -110,7 +110,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\FreeXP.Core\FreeXP-Core.csproj">
+    <ProjectReference Include="..\FreeXP-Core\FreeXP-Core.csproj">
       <Project>{72F56F8A-2A25-4153-B196-0F010E342C63}</Project>
       <Name>FreeXP-Core</Name>
     </ProjectReference>

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeXP-Core", "FreeXP.Core\FreeXP-Core.csproj", "{72F56F8A-2A25-4153-B196-0F010E342C63}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeXP-iOS", "FreeXP-iOS\FreeXP-iOS.csproj", "{FD66F48D-1FA4-4C0C-BAC9-A34D93CED1AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeXP-Android", "FreeXP-Android\FreeXP-Android.csproj", "{BE53CEEC-9F46-4072-8C08-FC8378B87F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeXP-Core", "FreeXP-Core\FreeXP-Core.csproj", "{72F56F8A-2A25-4153-B196-0F010E342C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,10 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72F56F8A-2A25-4153-B196-0F010E342C63}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
-		{72F56F8A-2A25-4153-B196-0F010E342C63}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
-		{72F56F8A-2A25-4153-B196-0F010E342C63}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
-		{72F56F8A-2A25-4153-B196-0F010E342C63}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{72F56F8A-2A25-4153-B196-0F010E342C63}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{72F56F8A-2A25-4153-B196-0F010E342C63}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{72F56F8A-2A25-4153-B196-0F010E342C63}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{72F56F8A-2A25-4153-B196-0F010E342C63}.AppStore|iPhone.Build.0 = Release|Any CPU
 		{72F56F8A-2A25-4153-B196-0F010E342C63}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{72F56F8A-2A25-4153-B196-0F010E342C63}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{72F56F8A-2A25-4153-B196-0F010E342C63}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
