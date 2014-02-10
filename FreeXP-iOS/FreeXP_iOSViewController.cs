@@ -30,7 +30,9 @@ namespace FreeXP.iOS
 				new XPProvider<UISwitch>(
 					new[] { switch1, switch2, switch3, switch4 },
 					x => x.SetState(true, true),
-					x => x.SetState(false, true)));
+					x => x.SetState(false, true),
+					x => x.On ? XPState.Free : XPState.Trapped
+				));
 		}
 
 		partial void free(UIButton sender)

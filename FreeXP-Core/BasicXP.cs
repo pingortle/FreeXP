@@ -6,13 +6,15 @@ namespace FreeXP.Core
 	{
 		readonly Action<T> _free;
 		readonly Action<T> _trap;
+		readonly Func<T, XPState> _testState;
 		readonly T _thing;
 
-		public BasicXP(T thing, Action<T> free, Action<T> trap)
+		public BasicXP(T thing, Action<T> free, Action<T> trap, Func<T, XPState> testState)
 		{
 			_free = free;
 			_trap = trap;
 			_thing = thing;
+			_testState = testState;
 		}
 
 		#region IXP implementation
@@ -27,6 +29,8 @@ namespace FreeXP.Core
 			if (_trap != null) _trap(_thing);
 		}
 
+
+		public XPState State { get { return _testState(_thing); } }
 		#endregion
 	}
 }

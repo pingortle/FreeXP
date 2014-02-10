@@ -30,7 +30,8 @@ namespace FreeXP.Android
 						.Cast<ToggleButton>()
 						.ToList(),
 					x => x.Checked = true,
-					x => x.Checked = false
+					x => x.Checked = false,
+					x => x.Checked ? XPState.Free : XPState.Trapped
 				));
 
 			FindViewById<Button>(Resource.Id.free).Click += delegate {

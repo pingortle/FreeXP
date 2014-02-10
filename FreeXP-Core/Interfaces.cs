@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace FreeXP.Core
 {
+	public enum XPState { Free, Trapped }
+
 	public interface IProvideXPsToFree
 	{
 		IList<IXP> XPs { get; }
@@ -12,5 +14,7 @@ namespace FreeXP.Core
 	{
 		void Free();
 		void Trap();
+
+		XPState State { get; }
 	}
 }
