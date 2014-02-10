@@ -33,12 +33,12 @@ namespace FreeXP.iOS
 					x => x.SetState(false, true)));
 		}
 
-		partial void free(MonoTouch.UIKit.UIButton sender)
+		partial void free(UIButton sender)
 		{
 			_freer.FreeSomething();
 		}
 
-		partial void trap(MonoTouch.UIKit.UIButton sender)
+		partial void trap(UIButton sender)
 		{
 			_freer.TrapSomething();
 		}
